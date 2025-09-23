@@ -136,8 +136,8 @@ bool move_right(vector<vector<int>>& board){
 
 void flip_board(vector<vector<int>>& board) {
     for (int r = 0; r < 4; r++){
-        for (int c = 0; c < 4; c++) {
-            board[r][c], board[c][r] = board[c][r], board[r][c];
+        for (int c = r + 1; c < 4; c++) {
+            swap(board[r][c], board[c][r]);
         }
     }
 }

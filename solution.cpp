@@ -206,7 +206,6 @@ int main(){
                 board = history.top();
                 history.pop();
             }
-            print_board(board,false);
             continue;
         }
 
